@@ -13,6 +13,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--background);
@@ -26,12 +32,14 @@ min-height: 100vh;
 
 }
 .card{
+    display: flex;
     background: var(--white);
     width: 60rem;
     height: 70vh;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .3s ease-in-out;
+    position: relative;
 }
 .card:hover {
     transform: scale(1.05);
@@ -46,7 +54,7 @@ min-height: 100vh;
 }
 .data {
     position: absolute;
-bottom: 8rem;
+bottom: 2rem;
 
 
 }
@@ -54,7 +62,7 @@ bottom: 8rem;
     display: flex;
     max-width: 20px 0;
     font-weight: 300;
-    margin: 20px 0;
+    margin: 15px 0;
     padding: 0 20px;
 }
 .data span {
@@ -72,7 +80,46 @@ bottom: 8rem;
     height: 1rem;
     width: 20rem;
     left: 0px;
+    z-index: 1;
+    margin: 20px 0;
 }
 .user-photo {
+    position: absolute;
+    left: 16rem;
+    bottom: 2rem;
+     z-index: 99;
     
 }
+.user-photo img {
+    width: 18rem;
+    height: 60vh;
+}
+.links-find {
+    margin: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.links {
+    display: flex;
+    align-items: center;
+    margin: 0 7rem;
+}
+.links li a{
+    margin-right: 20px;
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: var(--white87);
+  }
+  .rectangle {
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+  }
+  .circle {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+  }
