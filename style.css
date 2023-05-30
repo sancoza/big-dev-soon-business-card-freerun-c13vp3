@@ -110,16 +110,33 @@ bottom: 2rem;
 .square {
     height: 50px;
     width: 50px;
-    background-color: var(--white87);
+    background-color: #ebebeb;
+    left: -10px;
+    bottom: -7rem;
+  }
+  .square1 {
+    height: 50px;
+    width: 50px;
+    background-color: #ebebeb;
+    left: 2rem;
+top: 24rem;
+  }
+  .shapes {
+    position: absolute;
   }
   .rectangle {
-    height: 50px;
-    width: 100px;
-    background-color: #555;
+    height: 20px;
+    width:50px;
+    background-color: #ebebeb;
+    left: 16rem;
+    top: 2rem;
   }
   .circle {
     height: 50px;
     width: 50px;
-    background-color: #555;
+    background-color: var(--darkgreen);
     border-radius: 50%;
+    bottom: -27rem;
+    left: 16rem;
+    z-index: -1;
   }
