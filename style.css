@@ -29,7 +29,7 @@ body {
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-
+overflow: hidden;
 }
 .card{
     display: flex;
@@ -40,6 +40,9 @@ min-height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .3s ease-in-out;
     position: relative;
+    overflow: hidden;
+
+    
 }
 .card:hover {
     transform: scale(1.05);
@@ -140,3 +143,28 @@ top: 24rem;
     left: 16rem;
     z-index: -1;
   }
+  .circle1 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--darkgreen);
+    border-radius: 50%;
+    top: -3rem;
+    right: -4.5rem;
+  
+  }
+
+  .user-info {
+    margin-right: 5rem;
+    width: 300px;
+    position: absolute;
+    right: -1rem;
+    top: 2rem;
+  }
+  .user-info h1 span {
+    color: var(--darkgreen);
+  }
+  .user-info ul li {
+    list-style:circle;
+  }
+ 
