@@ -168,3 +168,76 @@ top: 24rem;
     list-style:circle;
   }
  
+
+  @media only screen and (max-width: 1024px) {
+    .data {
+        bottom: 9rem;
+    }
+    .user-info {
+        top: 13rem;
+    }
+    .circle1{
+        top: -14rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .card{
+        width: 52rem;
+        height: 47vh;
+    }
+    .data {
+        bottom: 25rem;
+    }
+    .user-info {
+        top: 13rem;
+        right: -5rem;
+    }
+    .circle1{
+        top: -0.5rem;
+    }
+    .user-photo img {
+        width: 16rem;
+        height: 29vh;
+    }
+    .user-photo{
+        bottom: 11rem;
+    }
+    .circle {
+        left: 14rem;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .card {
+        width: 49rem;
+    height: 27vh;
+    }
+    .data {
+        bottom: 53rem;
+    }
+    .user-photo img {
+        width: 12rem;
+        height: 16vh;
+    }
+    .user-photo {
+        bottom: 8rem;
+    }
+    .square1{
+        top: 17rem;
+    }
+    .circle {
+        bottom: -20rem;
+    left: 10rem;
+    }
+    .rectangle {
+        left: 11rem;
+    }
+    .user-info {
+        
+        width: 265px;
+        
+        right: -4rem;
+        
+    }
+  }
