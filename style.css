@@ -29,7 +29,7 @@ body {
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-
+overflow: hidden;
 }
 .card{
     display: flex;
@@ -40,6 +40,9 @@ min-height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .3s ease-in-out;
     position: relative;
+    overflow: hidden;
+
+    
 }
 .card:hover {
     transform: scale(1.05);
@@ -139,4 +142,102 @@ top: 24rem;
     bottom: -27rem;
     left: 16rem;
     z-index: -1;
+  }
+  .circle1 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--darkgreen);
+    border-radius: 50%;
+    top: -3rem;
+    right: -4.5rem;
+  
+  }
+
+  .user-info {
+    margin-right: 5rem;
+    width: 300px;
+    position: absolute;
+    right: -1rem;
+    top: 2rem;
+  }
+  .user-info h1 span {
+    color: var(--darkgreen);
+  }
+  .user-info ul li {
+    list-style:circle;
+  }
+ 
+
+  @media only screen and (max-width: 1024px) {
+    .data {
+        bottom: 9rem;
+    }
+    .user-info {
+        top: 13rem;
+    }
+    .circle1{
+        top: -14rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .card{
+        width: 52rem;
+        height: 47vh;
+    }
+    .data {
+        bottom: 25rem;
+    }
+    .user-info {
+        top: 13rem;
+        right: -5rem;
+    }
+    .circle1{
+        top: -0.5rem;
+    }
+    .user-photo img {
+        width: 16rem;
+        height: 29vh;
+    }
+    .user-photo{
+        bottom: 11rem;
+    }
+    .circle {
+        left: 14rem;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .card {
+        width: 49rem;
+    height: 27vh;
+    }
+    .data {
+        bottom: 53rem;
+    }
+    .user-photo img {
+        width: 12rem;
+        height: 16vh;
+    }
+    .user-photo {
+        bottom: 8rem;
+    }
+    .square1{
+        top: 17rem;
+    }
+    .circle {
+        bottom: -20rem;
+    left: 10rem;
+    }
+    .rectangle {
+        left: 11rem;
+    }
+    .user-info {
+        
+        width: 265px;
+        
+        right: -4rem;
+        
+    }
   }
